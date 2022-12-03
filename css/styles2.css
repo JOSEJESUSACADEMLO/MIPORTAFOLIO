@@ -1,0 +1,177 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&display=swap');
+
+:root{
+    --turquesa:#34B0BE;
+    --beige:#D1CECA;
+    --azul:#040d51;
+    --blanco:#FFFFFF;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    padding: 90px,20px , 0px;
+    font-family: 'Montserrat' , sans-serif ;
+  
+}
+
+header{
+    background-color: var(--azul);
+    height: 80px;
+    position: fixed;
+    width:100%;
+    top:0;
+    left:0;
+  
+}
+
+ /*
+ 
+ */
+    
+.nav{
+    background-color: var(--azul);
+    display:flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    box-shadow: 10px 5px 10px 5px #ccc;
+}
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.ancles{
+    display: inline-block;
+    color:var(--blanco);
+    text-decoration: none; 
+    padding: 8px 12px;
+    border-radius: 3px;
+    
+}
+
+
+.ancles:hover{
+    background-color: var(--turquesa);
+    transition: 0.5s;
+}
+
+
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+
+
+li{
+    font-size: 17px;
+    margin: 0 10px;
+    line-height: 80px;
+    width: max-content; /* no cortara el comntenido */
+
+}
+
+.checkbtn{
+    font-size: 50px;
+    float: right;
+    
+}
+
+/*
+.checkbtn{
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  display: none;  /*para que se solo visible en mobile
+ 
+}
+
+#check:checked ~ .nav-menu{
+    left:0;
+}
+
+#check{
+
+    display:none;
+  
+}
+
+
+
+@media screen and (min-width:678px){
+    label{
+        display: none;
+
+    }
+
+
+}*/
+/*
+@media (max-width: 768px){
+    body{
+        padding-top:70px;
+     
+    }
+    
+    header{
+        height: 60px;
+    }
+
+    .logo{
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: var(--turquesa);
+        position: fixed ;  /*para que la posicion dependa de la ventana
+        left:0;
+        top:60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% -60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+        cursor: pointer;
+    }
+
+      li{
+        line-height: 70px;
+      }
+
+      
+    .checkbtn{
+       
+        display: block;
+    }
+
+    .nav-menu-visible{
+        left:0%;
+    }
+  
+    
+
+    
+}
+
+/*
