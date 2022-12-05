@@ -6,7 +6,10 @@
     --beige:#D1CECA;
     --azul:#010739;
     --blanco:#FFFFFF;
-    --amarillo:rgb(249, 177, 9);
+    --amarillo:rgb(249, 109, 9);
+    --negro:black;
+    --gris:gray;
+
 
 }
 
@@ -29,8 +32,6 @@ body{
     width: 100%;
     box-shadow: 10px 5px 10px 5px #ccc;
 }
-
-
 
 .tec{
     height: 40px;
@@ -66,7 +67,7 @@ body{
 }
 
 .header{
-    background-color: var(--negro);
+    background-color: var(--azul);
     color: var(--turquesa);
 }
 
@@ -77,24 +78,35 @@ body{
 
 .informacion h2{
     font-size: 3rem;
-    color:var(--amarillo);
+    color:var(--turquesa);
     padding: 0rem 1.5rem 5rem;
 }
 
 
 .header-informacion{
- 
-    text-align: center;
-    padding: 5rem 1.5rem 5rem;
-    color:var(--blanco); 
+
+   
+    margin: auto;
+   
+    max-width:900px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    padding: 1.5rem 0;
+    border-radius: 5px;
+    flex-direction: row-reverse;
+
  }
 
+
+ 
 
 
 .header-informacion h1{
 
     font-size: 2.5rem;
-    color:var(--amarillo); 
+    color:var(--turquesa); 
 }
 
 .header-informacion h2 > span{
@@ -104,16 +116,16 @@ body{
 .informacion{
         background-color:var(--azul);
         text-align: center;
-        padding: 0rem 1.5rem 5rem;
+        padding: 3rem 1.5rem 5rem;
         font-size: 1.5rem;
         color:var(--blanco); 
 }
 
  
 .header-yo{
-    height: 300px;
-    width: 300px;
-    border-radius: 10rem;
+    height: 400px;
+    width: 400px;
+    border-radius: 20rem;
     border-color: var(--turquesa);
  
     margin-bottom: 2rem;
@@ -139,39 +151,83 @@ body{
 }
 
 .social-container2{
-   
+    margin: auto;
+    background-color: gray;
+    max-width: 750px;
     display: flex;
+    flex-wrap: wrap;
     gap: 3rem;
+    justify-content:center;
+    align-items: center;
+    padding: 1.5rem 0;
+    border-radius: 5px;
+
+
+    
+}
+
+.ctn{
+    
+    display: flex;
+    gap: 2rem;
     justify-content:center;
     align-items: center;
     padding: 1.5rem 0;
 }
 
 .box1{
-    background-color: gray;
+    background-color: var(--beige);
 }
 .box2{
-    background-color: gray;
+    background-color: var(--beige);
 }
 .box3{
-    background-color: gray;
+    background-color: var(--beige);
 }
 
 
-.status label{
-    margin: auto ; 
-    justify-content: center;
-    color: var(--amarillo);
-    text-align: center;
-    padding: 0rem 1.5rem 5rem;
-    font-size: 1.5rem;
-    
-    
+.l1{
+    margin: auto;
+    display: flex;
+    color: var(--blanco);
+    font-size: 1rem;
+    flex-wrap: wrap;
+    align-content: stretch;
+    padding-left: 400px;
 }
+ 
+
+.l2{
+    margin: auto;
+    display: flex;
+    color: var(--blanco);
+    font-size: 1rem;
+    flex-wrap: wrap;
+    align-content: stretch;
+    padding-left: 400px;
+}
+
+
+.l3{
+    margin: auto;
+    display: flex;
+    color: var(--blanco);
+    font-size: 1rem;
+    flex-wrap: wrap;
+    align-content: stretch;
+    padding-left: 400px;
+}
+
+#id{
+    display: flex;
+    justify-content: space-between;
+
+}
+
 
 .progress {
     margin: auto ;
-    height: 40px;
+    height: 20px;
     width: 50%;
     border: 1px solid var(--beige);
     border-radius: 5px;
@@ -183,7 +239,7 @@ body{
  
 .progress-bar {
     height: 100%;
-    background: var(--amarillo);
+    background: var(--turquesa);
     display: flex;
     align-items: center;
     transition: width 0.25s;
@@ -198,14 +254,49 @@ body{
 
 h3{ margin: auto ; 
     justify-content: center;
-    color: var(--amarillo);
+    color: gray;
     text-align: center;
-    padding: 5rem 1.5rem 5rem;
+    padding: 1rem 1.5rem 1rem;
+    font-size: 1rem;
+    
+}
+h2{ 
+    justify-content: center;
+    color: var(--azul);
+    text-align: center;
+   
     font-size: 2rem;
     
 }
+h4{
+    text-align: center;
+    padding: 2rem 1.5rem 5rem;
+    font-size: 3rem;
+    color:var(--turquesa); 
+}
+
+
+
 
 .Servicios{ 
+   
+    display: flex;
+    gap: 5rem;
+    justify-content:center;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+#h3-contactos{
+
+    text-align: center;
+    padding: 2rem 1.5rem 5rem;
+    font-size: 3rem;
+    color:var(--turquesa); 
+}
+
+#contacto{
+    text-align: center;
     display: flex;
     gap: 5rem;
     justify-content:center;
@@ -214,14 +305,99 @@ h3{ margin: auto ;
 }
 
 #img1{
-    background-color: var(--blanco)
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content:center;
+    align-items: center;
+    background-color: var(--blanco);
+    width: 300px;
+    height: 400px;
+    
 }
+
+
+
 #img2{
-    background-color: var(--blanco)
+    
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content:center;
+    align-items: center;
+    background-color: var(--blanco);
+    width: 300px;
+    height: 400px;
 }
 #img3{
-    background-color:var(--blanco)
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content:center;
+    align-items: center;
+    background-color: var(--blanco);
+    width: 300px;
+    height: 400px;
 }
+
+
+#img4{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content:center;
+    background-color: var(--blanco);
+    width: 300px;
+    height: 300px;
+
+
+
+}
+#img5{
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content:center;
+    background-color: var(--blanco);
+    width: 300px;
+    height: 300px;
+}
+
+.imagen6{
+    display: flex;
+    justify-content:center;
+    width: 200px;
+    height: 200px;
+}
+.imagen7{
+ 
+    display: flex;
+    justify-content:center;
+    width: 200px;
+    height: 200px;
+}
+
+
+.contacto-h2{
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+        font-size: 1.5rem;
+        color:var(--negro); 
+}
+
+
+.contacto-h3{
+
+        text-align: center;
+        font-size: 1rem;
+        color:var(--negro); 
+}
+
 
 .checkbtn{
     font-size: 40px;
@@ -236,8 +412,102 @@ h3{ margin: auto ;
   #check{
 
     display:none;
+
+    
   
 }
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  
+    background: var(--azul)
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 45px;
+    color: var(--azul);
+    background: rgba(0,0,0,.4);
+    text-align: center;
+
+ 
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: var(--turquesa);
+    padding: 15px;
+    color: var(--azul);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link {
+    border-top: solid 1px var(--blanco);
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a {
+    color: var(--blanco);
+}
+
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+} 
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+
 
 
 @media (max-width:750px){
@@ -255,7 +525,25 @@ h3{ margin: auto ;
         text-align: center;
         transition: all 0.5s;
     }
+    .header-informacion{
 
+   
+      
+
+   
+    max-width:500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0.5rem 0;
+    border-radius: 1px;
+    align-content: center;
+    align-items: center;
+    
+     }
+    
     .header-yo{
         height: 150px;
         width: 150px;
@@ -276,6 +564,28 @@ h3{ margin: auto ;
         padding: 0rem 1.5rem 5rem;
     }
 
+    .social-circle{
+        background-color: white;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 500px;
+    }
+    
+    .social-container2{
+        margin: auto;
+        background-color: gray;
+        max-width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content:center;
+        align-items: center;
+        padding: .5rem 0;
+        border-radius: 1px;}
 
     .informacion{
         background-color:var(--azul);
