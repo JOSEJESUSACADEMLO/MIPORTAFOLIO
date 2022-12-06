@@ -613,7 +613,7 @@ h4{
         background-color: var(--beige);
         margin-bottom: 15px;
         justify-content: center;
-        align-content: center;
+        align-content: left;
     }
      
     .progress-bar {
